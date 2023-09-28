@@ -10,7 +10,7 @@ group_call_factory = GroupCallFactory(app, GroupCallFactory.MTPROTO_CLIENT_TYPE.
 VIDEO_CALL = {}
 
 
-@Client.on_message(filters.command("stream"))
+@Client.on_message(filters.command("izlet"))
 async def stream(client, m: Message):
     replied = m.reply_to_message
     if not replied:
